@@ -1,0 +1,124 @@
+.navbar {
+    background-color: transparent;
+    box-shadow: none;
+    /* padding: 1.5rem 1rem; */
+}
+
+.nav-container {
+    padding: 0
+}
+
+.nav-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.avatar-picture {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-button-box {
+    display: flex;
+    /* gap: 8rem; */
+    justify-content: space-evenly;
+    width: 50dvw;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    text-transform: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-button:hover {
+    background-color: #eeeeee;
+}
+
+.dark-theme-button {
+    background-color: #eeeeee;
+}
+
+.mobile-menu-icon {
+    display: none;
+    background-color: #eeeeee;
+    max-height: 40px;
+}
+
+.menu-container {
+    display: none;
+}
+
+.menu-container .MuiPaper-root {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 17rem;
+    min-height: 14rem;
+    padding: 2.75rem 1.5rem 0.75rem 2rem;
+    border-radius: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    /* color: #333; */
+}
+
+.menu-button {
+    max-width: fit-content;
+    text-transform: none;
+    justify-content: flex-start;
+    padding: 0.2rem 0.9rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 100px;
+    border: 1px solid black;
+
+}
+
+.menu-close-icon {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 32px;
+    height: 32px;
+    color: black;
+    background-color: #eeeeee;
+    font-size: 1rem;
+}
+
+/* .menu-close-icon svg {
+    width: 15px;
+    height: 15px;
+} */
+
+@media (max-width: 675px) {
+    .nav-button-box {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-button-box {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .menu-container {
+        display: block;
+    }
+}
+

@@ -1,0 +1,9 @@
+.footer-conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto
+}
+
+.footer-centered {
+    max-width: 1200px;
+}
