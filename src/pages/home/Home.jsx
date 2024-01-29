@@ -57,7 +57,7 @@ const Home = () => {
 					<Typography component="h5" className="about-title">À propos :</Typography>
 					<Avatar src="/Profile_picture.jfif" className="about-avatar" />
 					<Typography component="p" className="about-paragraph">
-						Bonjour, je m'appelle Nizar Channane et je suis développeur web full-stack. Ce site me sert de portfolio, il a été codé principalement en Javascript et est complètement responsive. Si vous souhaitez en apprendre plus sur mon profil, n'hésitez pas à visiter la page <em>"À propos"</em>.
+						Bonjour, je m'appelle Nizar Channane et je suis développeur junior JS Full-stack (Node, React). Je peux donner vie à toutes vos idées de sites et d'applications web en assurant la conception, le développement, le déploiement et la maintenance. Si vous souhaitez en apprendre plus sur mon profil, n'hésitez pas à visiter la page <em>"À propos"</em>.
 					</Typography>
 					<Link to="/about" className="about-link">{"À propos >"}</Link>
 				</Paper>

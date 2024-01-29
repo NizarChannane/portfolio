@@ -1,6 +1,7 @@
 import React from 'react';
 import {
 	Box,
+    Button,
 	Container,
 	Avatar,
 	Paper,
@@ -8,30 +9,24 @@ import {
 } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Link } from 'react-router-dom';
+import "./About.css";
+import CV from "/CV-Nizar-Channane.pdf"
 
 const About = () => {
 	return (
-		<Container maxWidth="md" sx={{ mb: "3rem" }}>
-            <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", mt: "2rem" }}>
-                <Paper 
-                    elevation={3} 
-                    sx={{ 
-                        p: 3, 
-                        backgroundColor: "#efefef",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        gap: "3rem"
-                    }} 
-                >
-                    <Box sx={{ display: "flex", alignItems: "center", gap: "3rem", flexDirection: { xs: "column", md: "row" } }}>
-                        <Avatar src="/Profile_picture.jfif" sx={{ width: "200px", height: "200px" }} />
-                        <Typography variant="h3" sx={{ textAlign: "center", maxWidth: "450px" }}>Développeur web <br />Full-stack</Typography> 
+		<Container className="about-page-container">
+            <Box className="about-paper-container">
+                <Paper elevation={3} className="about-paper">
+                    <Box className="about-paper-header">
+                        <Avatar src="/Profile_picture.jfif" className="about-avatar"/>
+                        <Box>
+                            <Typography component="h3" className="job-title">Développeur JS <br />Full-stack</Typography>
+                            <Typography component="p" className="job-subtitle">(Node, React)</Typography>
+                        </Box>
                     </Box>
                     <Typography variant="h6" sx={{ textAlign: "center" }}>
-                        Bonjour, je m'appelle Nizar Channane et je suis développeur web full-stack. Ce site me sert de portfolio, il a été codé principalement en Javascript et est complètement responsive.<br />
-                        Titulaire d'un diplôme de "concepteur développeur d'applications", j'ai développé ce site afin de renforcer mes candidatures dans le cadre de ma recherche d'emploi.<br />
+                        Bonjour, je m'appelle Nizar Channane et je suis développeur junior JS Full-stack (Node, React). Bienvenue sur mon portfolio, où vous pourrez retrouver mes dernières réalisations ainsi que des informations sur mon profil.<br /><br />
+                        Titulaire d'un diplôme de "concepteur développeur d'applications", je me charge de la récolte des besoins clients/utilisateurs que je traduis ensuite en spécifications fonctionnelles et techniques ainsi que la conception de bases de données. J'assure également le développement et la livraison des fonctionnalités.<br /><br />
                         Je me spécialise sur les technologies suivantes :
                     </Typography>
                     <Box>
@@ -55,12 +50,12 @@ const About = () => {
                         <img src="https://skillicons.dev/icons?i=git,github,linux,nginx,md" />
                     </Box>
                     <Typography variant="h6" sx={{ textAlign: "center" }}>
-                        Je suis passionné de nouvelles technologies et j'ai une grande appétance pour les technologies du web. Toujours à la recherche des dernières bonnes pratiques, je fais toujours preuve d'attention aux détails et m'efforce de produire un code de qualité et optimisé; le tout afin d'offir une bonne expérience utilisateur et de permettre l'exploitation de mon code par d'autres développeurs.<br />
+                        Je suis passionné de nouvelles technologies et je pratique une veille régulière des technologies du web afin de fournir un service orienté vers la performance, une bonne expérience de développement et la scalabilité. Je fais toujours preuve d'attention aux détails et de rigueur dans mon code, applicant les dernières bonnes pratiques afin de créer des expériences utilisateurs de qualité et un code facilement exploitable par d'autres développeurs. .<br /><br />
                         Mon objectif aujourd'hui est de pouvoir intégrer une équipe dynamique où je pourrai m'épanouir et de travailler sur de nouveaux projets afin de parfaire mes compétences de développeur.
                     </Typography>
                     <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem", px: "2rem" }}>
                         <Typography variant="h6" sx={{ textAlign: "center" }}>
-                            Si souhaitez en apprendre plus sur mon profil, vous pouvez :
+                            Si vous souhaitez en apprendre plus sur mon profil, vous pouvez :<br /><br />
                         </Typography>
                         <Typography variant="h6" >
                             - Consulter mon{" "}
@@ -74,14 +69,15 @@ const About = () => {
                             <Link to="https://linkedin.com/in/nizar-channane-51abb2131" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>
                             LinkedIn{" "}
                             </Link> 
-                            <OpenInNewIcon sx={{ fontSize: "1rem" }} /> où vous trouverez des mises à jours sur l'avancée de ce site mais aussi sur mes projets futurs.
+                            <OpenInNewIcon sx={{ fontSize: "1rem" }} /> où vous trouverez des mises à jours sur l'avancée de mes futurs projets.
                         </Typography>
                         <Typography variant="h6" >
-                            - Me contacter à travers le formulaire de contact disponible sur ce site.
+                            - Télécharger mon CV (<em>.pdf</em>) :
                         </Typography>
-
                     </Box>
-
+                    <Link to={CV} download target="_blank" rel="noreferrer" >
+                        <Button className="download-cv-button">Télécharger le CV</Button>
+                    </Link>
                 </Paper>
             </Box>
         </Container>
