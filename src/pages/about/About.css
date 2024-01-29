@@ -1,0 +1,75 @@
+.about-page-container {
+    margin-bottom: 3rem;
+    max-width: 1000px;
+}
+
+.about-paper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    background-color: #efefef;
+}
+
+.about-paper-header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.job-title {
+    text-align: center;
+    max-width: 450px;
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.167;
+    letter-spacing: 0;
+}
+
+.job-subtitle {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.download-cv-button {
+    max-width: fit-content;
+    text-transform: none;
+    justify-content: flex-start;
+    padding: 0.2rem 0.9rem;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border-radius: 100px;
+    border: 1px solid black;
+    &:hover {
+        color: #333;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-page-container {
+        padding: 0;
+    }
+
+    .about-paper {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .about-paper-header {
+        flex-direction: column;
+    }
+}

@@ -55,4 +55,5 @@ body {
 	/* gap: 1rem; */
 	padding-top: 1rem;
 	min-height: 100dvh;
+	max-width: 1536px;
 }
