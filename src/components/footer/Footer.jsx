@@ -19,7 +19,7 @@ const Footer = () => {
                 </Typography>
                 <Box className="footer-links-container">
                     <Link 
-                        to="https://github.com/NizarChannane?tab=repositories" 
+                        to="https://github.com/NizarChannane/portfolio" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="footer-link"
@@ -37,7 +37,7 @@ const Footer = () => {
                         </IconButton>
                     </Link>
                     <Link 
-                        to="https://linkedin.com/in/nizar-channane-51abb2131" 
+                        to="https://linkedin.com/in/nizar-channane" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="footer-icon-links"

@@ -13,7 +13,6 @@ import { Link } from 'react-router-dom';
 import "./ProjectCard.css"
 
 const ProjectCard = ({ project }) => {
-    console.log(project);
     return (
         <Card className="project-card">
                 {

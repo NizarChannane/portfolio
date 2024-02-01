@@ -66,7 +66,7 @@ const About = () => {
                         </Typography>
                         <Typography variant="h6" >
                             - Consulter mon{" "} 
-                            <Link to="https://linkedin.com/in/nizar-channane-51abb2131" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>
+                            <Link to="https://linkedin.com/in/nizar-channane" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>
                             LinkedIn{" "}
                             </Link> 
                             <OpenInNewIcon sx={{ fontSize: "1rem" }} /> où vous trouverez des mises à jours sur l'avancée de mes futurs projets.

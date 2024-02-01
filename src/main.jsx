@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { StyledEngineProvider } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
-import ScrollToTop from './helpers/scrollToTop';
+import ScrollToTop from './helpers/ScrollToTop';
 // import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
